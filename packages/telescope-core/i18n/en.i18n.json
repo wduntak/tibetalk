@@ -1,6 +1,6 @@
 {
   "menu" : "Menu",
-  "view" : "View",
+  "view" : "Filter by",
   "top" : "Top",
   "new" : "New",
   "best" : "Best",
@@ -74,5 +74,5 @@
   "like_on_facebook": "Like on Facebook",
   "share_on_twitter": "Share on Twitter",
   "share_on_facebook": "Share on Facebook",
-  "powered_by_telescope": "Powered by Telescope"
+  "powered_by_telescope": "Designed by Tak Creative and Powered by Telescope"
 }

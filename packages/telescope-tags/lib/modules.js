@@ -7,7 +7,7 @@ Telescope.menuItems.add("adminMenu", {
 // push "categories" modules to postHeading
 Telescope.modules.add("postHeading", {
   template: 'post_categories',
-  order: 30
+  order: 10
 });
 
 // push "categories_menu" template to primaryNav

@@ -45,6 +45,15 @@ Template.postsLoadMore.helpers({
   }
 });
 
+Template.postsLoadMore.rendered = function() {
+  // is triggered every time we scroll
+  $(window).scroll(function() {
+    if ($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+      this.loadMoreHandler(this.controllerInstance);
+    }
+  });
+}
+
 Template.postsLoadMore.events({
   'click .more-button': function (event) {
     event.preventDefault();

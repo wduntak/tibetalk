@@ -1,5 +1,6 @@
 <template name="post_domain">
+  <span class="points">{{baseScore}} </span>
   {{#if url}}
-    <span class="post-domain {{moduleClass}}">{{domain}}</span>
+    <span class="post-domain {{moduleClass}}"><span class="dot">•</span> {{domain}}</span>
   {{/if}}
 </template>

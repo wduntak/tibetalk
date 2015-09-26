@@ -1,24 +1,24 @@
 // Custom Post Field
 
-Posts.addField({
-  fieldName: 'customPostField',
-  fieldSchema: {
-    type: String,
-    optional: true,
-    editableBy: ["member", "admin"]
-  }
-});
+// Posts.addField({
+//   fieldName: 'customPostField',
+//   fieldSchema: {
+//     type: String,
+//     optional: true,
+//     editableBy: ["member", "admin"]
+//   }
+// });
 
 // Custom Comment Field
 
-Comments.addField({
-  fieldName: 'customCommentField',
-  fieldSchema: {
-    type: String,
-    optional: true,
-    editableBy: ["member", "admin"]
-  }
-});
+// Comments.addField({
+//   fieldName: 'customCommentField',
+//   fieldSchema: {
+//     type: String,
+//     optional: true,
+//     editableBy: ["member", "admin"]
+//   }
+// });
 
 // Custom User Field
 

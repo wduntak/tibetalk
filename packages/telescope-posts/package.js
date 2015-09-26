@@ -57,6 +57,8 @@ Package.onUse(function (api) {
     'lib/client/templates/post_body.html',
     'lib/client/templates/post_edit.html',
     'lib/client/templates/post_edit.js',
+    'lib/client/templates/featured_post.html',
+    'lib/client/templates/featured_post.js',
     'lib/client/templates/post_item.html',
     'lib/client/templates/post_item.js',
     'lib/client/templates/post_page.html',

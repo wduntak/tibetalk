@@ -29,11 +29,20 @@ Package.onUse(function (api) {
   // client
 
   api.addFiles([
-    'lib/client/templates/hello.html',
-    'lib/client/templates/hello.js',
+    'lib/client/templates/posts/custom_posts_list.js',
+    'lib/client/templates/posts/custom_post_info.html',
+    'lib/client/templates/posts/custom_before_post_item.html',
+    'lib/client/templates/posts/custom_before_post_item.js',
+    'lib/client/templates/post_page/custom_post_page.html',
+    'lib/client/templates/post_page/custom_post_page.js',
+    'lib/client/templates/nav/custom_header.html',
+    'lib/client/templates/nav/custom_header.js',
     'lib/client/templates/custom_post_title.html',
     'lib/client/templates/custom_post_title.js',
-    'lib/client/stylesheets/custom.scss',
+    'lib/client/templates/custom_logo.html',
+    'lib/client/templates/custom_categories_menu.html',
+    'lib/client/templates/custom_categories_menu.js',
+    'lib/client/stylesheets/main.scss',
     'lib/client/custom_templates.js'
   ], ['client']);
 

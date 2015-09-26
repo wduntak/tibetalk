@@ -1,0 +1,5 @@
+<template name="featured_post">
+	{{#if firstPost}}
+		{{> modules zone="postComponents" zoneClass=postClass moduleClass="post-module" wrapperId=_id moduleData=this}}
+	{{/if}}
+</template>

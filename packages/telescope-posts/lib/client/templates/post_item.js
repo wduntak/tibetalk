@@ -22,5 +22,8 @@ Template.post_item.helpers({
     }
     postClass = Telescope.callbacks.run("postClass", postClass, post);
     return postClass;
+  },
+  secondPost: function () {
+    return this.rank >= 1;
   }
 });

@@ -1,3 +1,5 @@
 <template name="post_item">
-  {{> modules zone="postComponents" zoneClass=postClass moduleClass="post-module" wrapperId=_id moduleData=this}}
+	{{#if secondPost}}
+	  {{> modules zone="postComponents" zoneClass=postClass moduleClass="post-module" wrapperId=_id moduleData=this}}
+	{{/if}}
 </template>

@@ -4,10 +4,10 @@ Template.logo.helpers({
   }
 });
 
-Template.logo.onRendered(function  () {
-  $(".logo-text").quickfit({
-    min: 16,
-    max: 40,
-    truncate: false
-  });
-});
+// Template.logo.onRendered(function  () {
+//   $(".logo-text").quickfit({
+//     min: 16,
+//     max: 40,
+//     truncate: false
+//   });
+// });

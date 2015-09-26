@@ -28,6 +28,11 @@ showFilters (Boolean)
 -->
 
 <template name="posts_list">
+  <div class="featured-wrapper grid">
+      {{#each postsCursor}}
+        {{> featured_post}}
+      {{/each}}
+  </div>
   <div class="posts-wrapper grid">
     <div class="posts list {{postsLayout}}" aria-live="polite">
       {{#each postsCursor}}

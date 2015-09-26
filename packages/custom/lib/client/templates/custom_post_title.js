@@ -2,6 +2,5 @@
 
 Template.post_title.helpers({
   randomEmoji: function () {
-    return _.sample(["😀", "😰", "👮", " 🌸", "🐮", "⛅️", "🍟", "🍌", "🎃", "⚽️", "🎵"]);
   }
 });

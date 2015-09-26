@@ -208,8 +208,13 @@
 	.post {
 
 		@include onecol {
-			width: 100%;
-			margin-right: 0px;
+			// width: 100%;
+			// margin-right: 0px;
+			width: calc((100% - 10px)/2);
+			margin-right: 10px;
+			&:nth-of-type(2n) {
+				margin-right: 0;
+			}
 		}
 		@include twocol {
 			width: calc((100% - 10px)/2);
