@@ -2,8 +2,10 @@
 
 @import "global/colours";
 @import "global/animations";
+@import "global/grid";
 
 // Module Styles (header, posts, etc.)
 
 @import "modules/posts";
 @import "modules/layout";
+@import "modules/nav";

@@ -1,0 +1,34 @@
+Searching 1692 files for "powered by" (regex)
+
+/Users/jduntak/Desktop/Practice/tibettalk/packages/telescope-core/i18n/en.i18n.json:
+   75    "share_on_twitter": "Share on Twitter",
+   76    "share_on_facebook": "Share on Facebook",
+   77:   "powered_by_telescope": "Designed by Wangdu Duntak and Powered by Telescope"
+   78  }
+
+/Users/jduntak/Desktop/Practice/tibettalk/packages/telescope-email/.npm/package/node_modules/html-to-text/node_modules/underscore.string/test/test_underscore/vendor/jslitmus.js:
+  406        <iframe id="tiny_url" frameBorder="0" scrolling="no" src=""></iframe> \
+  407        </div> \
+  408:       <a id="jslitmus_credit" title="JSLitmus home page" href="http://code.google.com/p/jslitmus" target="_blank">Powered by JSLitmus</a> \
+  409      </div>';
+  410  
+
+2 matches across 2 files
+
+
+Searching 1692 files for "powered_by" (regex)
+
+/Users/jduntak/Desktop/Practice/tibettalk/packages/telescope-core/i18n/en.i18n.json:
+   75    "share_on_twitter": "Share on Twitter",
+   76    "share_on_facebook": "Share on Facebook",
+   77:   "powered_by_telescope": "Powered by Telescope"
+   78  }
+
+/Users/jduntak/Desktop/Practice/tibettalk/packages/telescope-core/lib/client/templates/common/footer_code.html:
+   52  			</div>
+   53  		</div>
+   54: 		<a href="http://telescopeapp.org" target="_blank">{{_ "powered_by_telescope"}}</a>
+   55      {{/if}}
+   56    </div>
+
+2 matches across 2 files

@@ -1,4 +1,4 @@
-<template name="layout">
+<template name="custom_layout">
   {{> css}}
   <div class="outer-wrapper {{currentPage}} {{navLayout}}">
     {{> mobile_nav}}
@@ -10,8 +10,9 @@
         {{> yield "adminMenu"}}
         {{> modules zone="top"}}
         {{> yield}}
-        {{> modules zone="footer"}}
       </div>
+        {{> modules zone="popular"}}
+        {{> modules zone="footer"}}
       <div class="overlay hidden"></div>
     </div>
     {{{extraCode}}}

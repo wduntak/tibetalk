@@ -1,0 +1,314 @@
+// 1. Neutral
+// 2. Mobile (+see Base theme for mobile nav)
+// 3. Desktop
+// 		a. Top Nav
+//		b. Side nav
+
+.header{
+	margin-bottom: 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	width: 100%;
+	top: 0;
+	background: rgb(255, 255, 255);
+	padding: 0 100px;
+	z-index: 100;
+	.logo{
+		line-height: 1;
+		text-align: center;
+		h1.logo-text{
+	      display: block;
+	      float: left;
+	      margin-left: 10px;
+	      margin-top: 6px;
+	      text-transform: uppercase;
+	    }
+		a, a:visited{
+			color:white;
+		}
+		img {
+	      display: block;
+	      float: left;
+	      width: 55px;
+	    }
+	}
+}
+.sign-up{
+	margin-right: 10px;
+}
+
+.has-dropdown .user-menu .dropdown-menu{
+  left: auto;
+  right: 10px;
+}
+.has-dropdown .notifications-menu .dropdown-menu{
+  left: auto;
+  right: 10px;
+}
+.newsletter-dismiss{
+	line-height: 30px !important;
+}
+
+.user-menu{
+	.avatar{
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -3px;
+		margin-right: 3px;
+	}
+	.user-menu-username{
+		vertical-align: middle;
+	}
+}
+// ------------------------------------ Top Nav Layout ------------------------------------ //
+
+.top-nav{
+	.header{
+		margin-bottom: 0px;
+  		border-bottom: 1px solid rgba(0,0,0,0.15);
+		position: fixed;
+		width: 100%;
+		top: 0;
+		padding: 0px 10px;
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include small{
+			padding: 0 10px;
+		}
+		.header-wrapper{
+			display: flex;
+			max-width: 1225px;
+			width: 100%;
+			margin: 0 auto;
+			.header-submodule{
+				flex-shrink: 0;
+		    	margin-right: 20px;
+			  		&:last-of-type{
+		  	  			margin-right: 0px;
+		  			}
+			}
+			.primary-nav, .secondary-nav, .logo{
+				flex-basis: 0;
+				flex-grow: 1;
+			}
+			.primary-nav{
+				order: 2;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			.secondary-nav{
+				// background: rebeccapurple;
+				order: 3;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				.submit-button {
+					.submit.btn {
+						background-color: #D44A4A;
+						border: none;
+					}
+				}
+				.user-menu {
+					.avatar {
+						.avatar-initials {
+							font-size: 11px;
+							line-height: 20px;
+						}
+					}
+				}
+			}
+			.logo{
+				// background: pink;
+				text-align:center;
+				color:white;
+				order: 1;
+				.logo-text{
+					a {
+						text-transform: uppercase;
+					}
+					@include small{
+						font-size: 18px;
+						a{
+							position: static;
+						}
+					}
+					@include medium-large{
+						font-size:24px;
+					}
+				}
+			}
+			.logo-image{
+				line-height: 1;
+				a {
+					display:inline-block;
+					background: no-repeat center center;
+					font: 0/0 a;
+					text-shadow: none;
+					color: transparent;
+				}
+			}
+		}
+	}
+}
+// ------------------------------------ Side Nav Layout ------------------------------------ //
+
+$nav-width: 250px;
+
+.side-nav{
+  .inner-wrapper{
+		@include medium-large{
+	    margin-left: $nav-width;
+	    padding-top: 10px;
+    }
+	}
+	.header{
+		@include medium-large{
+			width: $nav-width;
+			position: fixed;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			height: 100%;
+			overflow-y: auto;
+			display: flex;
+			flex-direction:column;
+			justify-content: space-between;
+		}
+		.logo{
+			text-align: left;
+			&.logo-image{
+				text-align: center;
+				a{
+					margin: 0 auto;
+				}
+			}
+			// @include medium-large{
+			// 	margin-bottom: 15px;
+			// }
+		}
+		// .header-module{
+		// 	margin-bottom: 15px;
+		// 	&:last-of-type{
+		// 		margin-bottom: 0px;
+		// 	}
+		// }
+		.header-submodule{
+			margin-bottom: 15px;
+		}
+		.primary-nav{
+			flex-grow: 2;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 15px;
+		}
+		.secondary-nav{
+			.header-submodule:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+		.search{
+			order: 1;
+		}
+		.categories-menu-wrapper{
+			order: 2;
+		}
+		.menu-label{
+			display: block;
+			font-weight: 600;
+		}
+		.menu-description{
+			// display: block;
+			display: none;
+			font-weight: normal;
+		}
+		.signin-signup{
+			text-align: center;
+		}
+		.account-link{
+		}
+	}
+	.tagline{
+		margin-top: 10px;
+	}
+	.menu{
+	}
+	.menu.menu-expanded{
+	}
+}
+
+// ---------------------------------------- Mobile ---------------------------------------- //
+
+@include small{
+	.header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.sub-menu {
+	height: 0px;
+    top: 60px;
+    width: 100%;
+    z-index: 200;
+    position: fixed;
+    background-color: #fff;
+    overflow: hidden;
+	-moz-transition: height 400ms ease;
+    -webkit-transition: height 400ms ease;
+    -o-transition: height 400ms ease;
+    transition: height 400ms ease;
+    .categories-menu-wrapper {
+    	.menu.categories-menu {
+    		.menu-top-level {
+    			display: none;
+    		}
+    		.menu-top-level:after {
+    			display: none;
+    		}
+    		.menu-wrapper {
+    			display: block;
+    			width: 60%;
+    			float: none;
+    			left: inherit;
+    			position: relative;
+    			padding-top: 0;
+    			color: #262626;
+    			ul.menu-contents {
+    				background: none;
+    				padding: 0;
+    				overflow: inherit;
+    				min-width: inherit;
+    				border-radius: 0;
+    				box-shadow: none;
+    				list-style-type: none;
+    				li.menu-item {
+    					margin:0 20px;
+    					float:left;
+    					text-align: center;
+    					.menu-item-wrapper {
+    						.menu-label {
+    							font-weight: 600;
+							    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    						}
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+}
+.sub-menu:not(.active) {
+	-moz-transition: height 0s;
+    -webkit-transition: height 0s;
+    -o-transition: height 0s;
+    transition: height 0s;
+}
+.sub-menu.active {
+	height: 55px;
+}

@@ -1,0 +1,10 @@
+<template name="custom_post_comments_link">
+  <div class="{{moduleClass}}">
+    <a class="comments-link" href="{{this.getPageUrl}}" title="Discuss">
+      <!-- <span class="comments-action">Discuss</span> -->
+      <!-- {{{icon "comment-o fa-2x"}}} -->
+      <img src="/img/discuss.svg" style="width: 45px;"/>
+      <span class="comments-count">{{commentCount}}</span>
+    </a>
+  </div>
+</template>
